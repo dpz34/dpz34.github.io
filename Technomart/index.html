@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Technomart Demo</title>
-  <link rel="stylesheet" href="/css/technomart.css">
+  <link rel="stylesheet" href="/Technomart/css/styles.css">
 </head>
 <body>
   <header class="page-header">
@@ -15,12 +15,12 @@
           <a class="page-header__logo" href="#">
             <img src="/Technomart/img/logo-technomart.svg" alt="Интернет-магазин Техномарт">
           </a>
-          <input class="field field--search" type="search" name="" id="shop-search">
+          <input class="field field--search" type="search" id="shop-search" name="query">
           <ul class="shop-nav__list">
             <li class="shop-nav__item"><span></span>Закладки: 0</li>
             <li class="shop-nav__item"><span></span>Корзина: 0</li>
           </ul>
-          <a class="button button--order" href="#">Оформить заказ</a>
+          <a class="button button--order">Оформить заказ</a>
         </nav>
       </div>
       <section class="page-header__contacts">
@@ -28,19 +28,19 @@
         <p class="contacts__phone"><span></span>+7 (812) 555-05-55</p>
         <p class="contacts__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </section>
+      <ul class="page-header__log-in">
+        <li><a href="#"><span class="log-in"></span>Войти</a></li>
+        <li><a href="#">Регистрация</a></li>
+      </ul>
       <nav class="main-nav">
         <ul class="main-nav__list">
-          <li><span></span>Войти</li>
-          <li>Регистрация</li>
-        </ul>
-        <ul class="main-nav__list">
           <li class="main-nav__item"><a href="#">Главная</a></li>
-          <li class="main-nav__item"><a href="#">Компания</a></li>
-          <li class="main-nav__item"><a href="#">Каталог</a></li>
-          <li class="main-nav__item"><a href="#">Новости</a></li>
-          <li class="main-nav__item"><a href="#">Спецпредложения</a></li>
-          <li class="main-nav__item"><a href="#">Доставка</a></li>
-          <li class="main-nav__item"><a href="#">Контакты</a></li>
+          <li class="main-nav__item"><a>Компания</a></li>
+          <li class="main-nav__item"><a href="/Technomart/catalog.html">Каталог</a></li>
+          <li class="main-nav__item"><a>Новости</a></li>
+          <li class="main-nav__item"><a>Спецпредложения</a></li>
+          <li class="main-nav__item"><a>Доставка</a></li>
+          <li class="main-nav__item"><a>Контакты</a></li>
         </ul>
       </nav>
     </div>
@@ -53,27 +53,27 @@
             <span class="new"></span>
             <p>Материалы</p>
             <img src="/Technomart/img/icon-1.svg" alt="Материалы">
-            <a class="button shop-menu__item--button" href="#">На любой вкус</a>
+            <a class="button shop-menu__item--button">На любой вкус</a>
           </li>
           <li class="shop-menu__item">
             <p>Инструмент</p>
             <img src="/Technomart/img/icon-2.svg" alt="Инструмент">
-            <a class="button shop-menu__item--button" href="#">На все случаи</a>
+            <a class="button shop-menu__item--button">На все случаи</a>
           </li>
           <li class="shop-menu__item">
             <p>Техника</p>
             <img src="/Technomart/img/icon-3.svg" alt="Техника">
-            <a class="button shop-menu__item--button" href="#">Для стройки</a>
+            <a class="button shop-menu__item--button">Для стройки</a>
           </li>
           <li class="shop-menu__item">
             <p>Скидки 50&percnt;</p>
             <img src="/Technomart/img/icon-4.svg" alt="Скидки">
-            <a class="button shop-menu__item--button" href="#">На 350 товаров</a>
+            <a class="button shop-menu__item--button">На 350 товаров</a>
           </li>
           <li class="shop-menu__item">
             <p>Доставка</p>
             <img src="/Technomart/img/icon-5.svg" alt="Доставка">
-            <a class="button shop-menu__item--button" href="#">Бесплатно</a>
+            <a class="button shop-menu__item--button">Бесплатно</a>
           </li>
         </ul>
       <div class="shop-menu__slider">
@@ -86,8 +86,8 @@
             <h4>Дрели</h4>
             <p>Соседям на радость!</p>
           </li>
-        <a class="button" href="#">Открыть каталог</a>
         </ul>
+        <a class="button" href="/Technomart/catalog.html">Открыть каталог</a>
         <ol class="slider__buttons">
           <li class="slider-button"></li>
           <li class="slider-button"></li>
@@ -96,7 +96,7 @@
       </div>
       <div class="page-content__popular">
         <h3>Популярные товары:</h3>
-        <a class="button" href="#">Все популярные товары</a>
+        <a class="button">Все популярные товары</a>
         <ul class="popular__list">
           <li class="popular__item">
             <img src="/Technomart/img/Perforator_1.svg" alt="Перфоратор BOSCH BFG 9000">
@@ -126,7 +126,7 @@
       </div>
       <div class="page-content__brands">
         <h3>Популярные производители:</h3>
-        <a class="button" href="#">Все производители</a>
+        <a class="button">Все производители</a>
         <ul class="brands__list">
           <li class="brands__item"><a href="#"><img src="/Technomart/img/bosch.svg" alt="Bosch"></a></li>
           <li class="brands__item"><a href="#"><img src="/Technomart/img/Makita.svg" alt="Makita"></a></li>
@@ -188,7 +188,7 @@
             <li><span></span>Автотрейдинг</li>
             <li><span></span>ЖелДорЭкспедиция</li>
           </ul>
-          <a class="button" href="#">Подробнее о компании</a>
+          <a class="button">Подробнее о компании</a>
         </section>
         <section class="info__map">
           <h3>Контакты</h3>
@@ -199,7 +199,7 @@
           <a href="#">
             <img src="/Technomart/img/map.svg" alt="">
           </a>
-          <a class="button" href="#">Заблудились? Напишите нам!</a>
+          <a class="button">Заблудились? Напишите нам!</a>
         </section>
       </div>
     </div>
@@ -211,15 +211,15 @@
           <img src="/Technomart/img/logo-technomart.svg" alt="Интернет-магазин Техномарт">
         </a>
         <ul class="bottom-nav__list bottom-nav__list--primary">
-          <li class="bottom-nav__item"><a href="#">Компания</a></li>
-          <li class="bottom-nav__item"><a href="#">Новости</a></li>
-          <li class="bottom-nav__item"><a href="#">Каталог</a></li>
-          <li class="bottom-nav__item"><a href="#">Доставка</a></li>
-          <li class="bottom-nav__item"><a href="#">Контакты</a></li>
-          <li class="bottom-nav__item bottom-nav__item--secondary"><a href="#">Материалы</a></li>
-          <li class="bottom-nav__item bottom-nav__item--secondary"><a href="#">Техника</a></li>
-          <li class="bottom-nav__item bottom-nav__item--secondary"><a href="#">Инструмент</a></li>
-          <li class="bottom-nav__item bottom-nav__item--secondary"><a href="#">Спецпредложения</a></li>
+          <li class="bottom-nav__item"><a>Компания</a></li>
+          <li class="bottom-nav__item"><a>Новости</a></li>
+          <li class="bottom-nav__item"><a href="/Technomart/catalog.html">Каталог</a></li>
+          <li class="bottom-nav__item"><a>Доставка</a></li>
+          <li class="bottom-nav__item"><a>Контакты</a></li>
+          <li class="bottom-nav__item bottom-nav__item--secondary"><a>Материалы</a></li>
+          <li class="bottom-nav__item bottom-nav__item--secondary"><a>Техника</a></li>
+          <li class="bottom-nav__item bottom-nav__item--secondary"><a>Инструмент</a></li>
+          <li class="bottom-nav__item bottom-nav__item--secondary"><a>Спецпредложения</a></li>
         </ul>
       </nav>
       <p class="page-footer__contacts">
@@ -232,9 +232,9 @@
           Все права защищены
         </p>
         <ul class="page-footer__social-links">
-          <li><a class="social-links__link" href="#" title=""></a></li>
-          <li><a class="social-links__link" href="#" title=""></a></li>
-          <li><a class="social-links__link" href="#" title=""></a></li>
+          <li class="social-links__link"><a><span class="link--vk"></span></a></li>
+          <li class="social-links__link"><a><span class="link--facebook"></span></a></li>
+          <li class="social-links__link"><a><span class="link--instagram"></span></a></li>
         </ul>
         <p class="page-footer__feedback">
           <b>Обратная связь:</b>
